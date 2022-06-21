@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components/macro";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FrontEndString from "./components/FrontEndString";
+import FullName from "./components/FullName";
+import Introduce from "./components/Introduce";
 
+gsap.registerPlugin(ScrollTrigger);
+
+const TextWrapper = styled.div`
+  margin-top: 15vh;
+  border: black solid 1px;
+`;
+
+const Align = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TextWrapper>
+        <FullName />
+        <FrontEndString />
+      </TextWrapper>
+      <Align>
+        <Introduce />
+      </Align>
+    </>
   );
 }
 
