@@ -25,7 +25,7 @@ const FrontEndString = forwardRef((props, ref) => {
   const tpRefs = useRef([]);
   const dx = 10;
   const tl = gsap.timeline();
-  const name = "FrontEnd";
+  const name = "PortPolio";
   const nameList = name.split("");
   const tpName = nameList.map((e, index) => (
     <Tp

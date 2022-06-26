@@ -23,10 +23,15 @@ const AboutTitle = styled.div`
   padding: 1.5rem;
 `;
 
+const SubTitle = styled(AboutTitle)`
+  font-size: 35px;
+`;
+
 function AboutMe() {
   return (
     <WhiteBox>
-      <AboutTitle>About Me</AboutTitle>
+      <AboutTitle>개발의 즐거움을 아는 개발자 김명진입니다</AboutTitle>
+      <SubTitle>저는 개발을 하면 부딛치는 어려움을 즐기며 성장하는 개발자 입니다</SubTitle>
       <AboutBox>
         <AboutMeinfo title={"이름"} content={"김명진"} icon={faUser} />
         <AboutMeinfo title={"자격증"} content={"ADsP, 정보처리기사"} icon={faLocationDot} />
