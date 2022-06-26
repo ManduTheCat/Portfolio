@@ -22,6 +22,7 @@ const FlexContent = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 1.5rem;
 `;
 
 const SkillsBox = styled.div`

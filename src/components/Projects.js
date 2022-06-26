@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import ProjectInfo from "./ProjectInfo";
 
 const BlackBox = styled.div`
   background-color: #212529;
@@ -7,7 +8,7 @@ const BlackBox = styled.div`
   width: 100%;
   border: 1px solid black;
   padding-top: 50px;
-  height: 50vh;
+  max-height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -25,8 +26,12 @@ const Title = styled.div`
 const ProjectWrapper = styled.div`
   border: 1px solid white;
   display: flex;
-  max-width: 80%;
+  max-width: 90%;
+  min-width: 85%;
   flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 2.5rem;
 `;
 
 function Projects() {
@@ -34,8 +39,8 @@ function Projects() {
     <BlackBox>
       <Title>Project</Title>
       <ProjectWrapper>
-        <div>project box</div>
-        <div>project box</div>
+        <ProjectInfo />
+        <ProjectInfo />
       </ProjectWrapper>
     </BlackBox>
   );
