@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 import ProjectInfo from "./ProjectInfo";
+import { collectorArticle } from "./markDown/projectMarkdown";
+import projectImg from "../asset/collector.png";
 
 const BlackBox = styled.div`
   background-color: #212529;
@@ -39,7 +41,7 @@ function Projects() {
     <BlackBox>
       <Title>Project</Title>
       <ProjectWrapper>
-        <ProjectInfo />
+        <ProjectInfo content={collectorArticle} img={projectImg} />
         <ProjectInfo />
       </ProjectWrapper>
     </BlackBox>
