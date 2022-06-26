@@ -17,6 +17,7 @@ const Title = styled.div`
   padding: 1.5rem;
   text-align: center;
   font-size: 40px;
+  border-bottom-width: 1px;
 `;
 const FlexContent = styled.div`
   display: flex;

@@ -23,8 +23,8 @@ const ImgWrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 500;
 `;
 
 function SkillsInfo(props) {
