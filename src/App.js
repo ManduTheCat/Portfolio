@@ -6,6 +6,8 @@ import FrontEndString from "./components/FrontEndString";
 import FullName from "./components/FullName";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects"
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +30,7 @@ function App() {
       </TextWrapper>
       <AboutMe />
       <Skills />
+      <Projects/>
     </>
   );
 }
