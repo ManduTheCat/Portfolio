@@ -4,14 +4,14 @@ import { gsap } from "gsap";
 
 const TextBox = styled.svg`
   margin: 0 0;
-  stroke: #fff;
-  fill: #fff;
+  stroke: black;
+  fill: black;
   width: 100%;
   height: inherit;
 `;
 const Text = styled.text`
   text-anchor: start;
-  stroke: #fff;
+  stroke: black;
   stroke-width: 0.5;
   font-size: 50px;
 `;
@@ -44,7 +44,7 @@ const FullName = forwardRef((props, ref) => {
   });
   return (
     <TextBox ref={ref}>
-      <Text x="30vw" y="10vh" fill="#fff">
+      <Text x="30vw" y="10vh" fill="black">
         {tpName}
       </Text>
     </TextBox>

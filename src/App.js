@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FrontEndString from "./components/FrontEndString";
 import FullName from "./components/FullName";
-import Introduce from "./components/Introduce";
+import AboutMe from "./components/AboutMe";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,11 +13,11 @@ const TextWrapper = styled.div`
   border: black solid 1px;
 `;
 
-const Align = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
+// const Align = styled.div`
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+// `;
 function App() {
   return (
     <>
@@ -25,9 +25,7 @@ function App() {
         <FullName />
         <FrontEndString />
       </TextWrapper>
-      <Align>
-        <Introduce />
-      </Align>
+      <AboutMe />
     </>
   );
 }
