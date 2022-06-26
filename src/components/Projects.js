@@ -37,7 +37,7 @@ const ProjectWrapper = styled.div`
 function Projects() {
   return (
     <BlackBox>
-      <Title>Project</Title>
+      <Title>Projects</Title>
       <ProjectWrapper>
         <ProjectInfo content={collectorArticle} img={projectImg} />
         <ProjectInfo content={portPoliProject} img={portPolioImg} />
