@@ -2,6 +2,7 @@ import React from "react";
 import frontImg from "../asset/front.png";
 import BackImg from "../asset/back.png";
 import styled from "styled-components/macro";
+import devOps from "../asset/devOps.png";
 
 const Wrapper = styled.div`
   display: flex;
@@ -33,6 +34,8 @@ function SkillsInfo(props) {
     src = frontImg;
   } else if (title === "Back") {
     src = BackImg;
+  } else if (title === "devOps") {
+    src = devOps;
   }
   return (
     <Wrapper>

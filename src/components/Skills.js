@@ -31,6 +31,7 @@ const SkillsBox = styled.div`
   justify-content: space-around;
   box-sizing: border-box;
   height: 25rem;
+  flex-wrap: wrap;
 `;
 
 const SkillsBoxStack = styled.div`
@@ -53,6 +54,9 @@ function Skills() {
         <SkillsBox>
           <SkillsBoxStack>
             <SkillsInfo title={"Front"} />
+          </SkillsBoxStack>
+          <SkillsBoxStack>
+            <SkillsInfo title={"devOps"} />
           </SkillsBoxStack>
           <SkillsBoxStack>
             <SkillsInfo title={"Back"} />
