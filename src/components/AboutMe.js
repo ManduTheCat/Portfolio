@@ -6,7 +6,6 @@ const WhiteBox = styled.div`
   background-color: white;
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid black;
   margin-top: 50px;
 `;
 const AboutBox = styled.div`

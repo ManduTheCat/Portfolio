@@ -6,14 +6,12 @@ import FrontEndString from "./components/FrontEndString";
 import FullName from "./components/FullName";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects"
-
+import Projects from "./components/Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TextWrapper = styled.div`
-  margin-top: 15vh;
-  border: black solid 1px;
+  margin-top: 0.5vh;
 `;
 
 // const Align = styled.div`
@@ -30,7 +28,7 @@ function App() {
       </TextWrapper>
       <AboutMe />
       <Skills />
-      <Projects/>
+      <Projects />
     </>
   );
 }

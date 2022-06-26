@@ -8,7 +8,6 @@ const BlackBox = styled.div`
   background-color: #212529;
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid black;
   padding-top: 50px;
   max-height: 100%;
   color: white;
@@ -26,10 +25,8 @@ const Title = styled.div`
 `;
 
 const ProjectWrapper = styled.div`
-  border: 1px solid white;
   display: flex;
-  max-width: 90%;
-  min-width: 85%;
+  min-width: 95%;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;

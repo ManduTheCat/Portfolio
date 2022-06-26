@@ -6,7 +6,6 @@ const ProjectInfoWrapper = styled.div`
   background: white;
   width: 80%;
   height: 50vh;
-  border: solid black 1px;
   color: black;
   box-sizing: border-box;
   border-radius: 10px;
@@ -30,7 +29,6 @@ const Imgbox = styled.img`
 `;
 
 const ImgWrapper = styled.div`
-  border: 1px solid black;
   box-sizing: border-box;
   width: 30vh;
   height: 30vh;
@@ -40,14 +38,13 @@ const ArticleWrapper = styled.div`
   box-sizing: border-box;
   flex-grow: 0.25;
   margin-left: 4rem;
-  border: 1px black solid;
 `;
 
 const MarkdownWrapper = styled.div``;
 
 function ProjectInfo(props) {
-  let article = "";
-  let secArticle = "";
+  let article = "# 다음 프로젝트 자리";
+  let secArticle = "## 다음 프로젝트 자리";
   if (props.content) {
     article = props.content.article;
     secArticle = props.content.secArticle;
