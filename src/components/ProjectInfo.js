@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import ReactMarkdown from "react-markdown";
 
 const ProjectInfoWrapper = styled.div`
@@ -16,7 +16,34 @@ const ProjectInfoWrapper = styled.div`
   }
 `;
 
-const Imgbox = styled.img``;
+const FlexBox = styled.div`
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`;
+
+const Imgbox = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+const ImgWrapper = styled.div`
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 30vh;
+  height: 30vh;
+`;
+
+const ArticleWrapper = styled.div`
+  box-sizing: border-box;
+  flex-grow: 0.25;
+  margin-left: 4rem;
+  border: 1px black solid;
+`;
+
+const MarkdownWrapper = styled.div``;
 
 function ProjectInfo(props) {
   let article = "";
@@ -28,19 +55,21 @@ function ProjectInfo(props) {
   return (
     <>
       <ProjectInfoWrapper>
-        <div>
-          <div>
-            <Imgbox art="projecImg" src={props.img} />
-          </div>
-          <div>
-            <div>
+        <FlexBox>
+          <ImgWrapper>
+            <a href="https://github.com/Elice-Team-20/Collectors">
+              <Imgbox art="projecImg" src={props.img} />
+            </a>
+          </ImgWrapper>
+          <ArticleWrapper>
+            <MarkdownWrapper>
               <ReactMarkdown children={article} />
-            </div>
-            <div>
+            </MarkdownWrapper>
+            <MarkdownWrapper>
               <ReactMarkdown children={secArticle} />
-            </div>
-          </div>
-        </div>
+            </MarkdownWrapper>
+          </ArticleWrapper>
+        </FlexBox>
       </ProjectInfoWrapper>
     </>
   );
