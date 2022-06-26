@@ -7,7 +7,7 @@ const SkillsWrapper = styled.div`
   background-color: #ffc107;
   width: 100%;
   max-height: 90vh;
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 60px;
 `;
 
