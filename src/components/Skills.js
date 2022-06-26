@@ -1,0 +1,67 @@
+import React from "react";
+import styled from "styled-components/macro";
+import SkillsInfo from "./SkillsInfo";
+
+const SkillsWrapper = styled.div`
+  box-sizing: border-box;
+  background-color: #ffc107;
+  width: 100%;
+  max-height: 90vh;
+  margin-top: 50px;
+  padding-bottom: 60px;
+`;
+
+const Title = styled.div`
+  text-align: center;
+  font-weight: bolder;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 40px;
+`;
+const FlexContent = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+const SkillsBox = styled.div`
+  max-width: 90%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid;
+  box-sizing: border-box;
+  height: 25rem;
+`;
+
+const SkillsBoxStack = styled.div`
+  background-color: white;
+  box-sizing: border-box;
+  width: 32%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 32px;
+`;
+
+function Skills() {
+  return (
+    <SkillsWrapper>
+      <Title>Skills</Title>
+      <FlexContent>
+        <SkillsBox>
+          <SkillsBoxStack>
+            <SkillsInfo title={"Front"} />
+          </SkillsBoxStack>
+          <SkillsBoxStack>
+            <SkillsInfo title={"Back"} />
+          </SkillsBoxStack>
+        </SkillsBox>
+      </FlexContent>
+    </SkillsWrapper>
+  );
+}
+
+export default Skills;

@@ -4,7 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const InfoWrapper = styled.div`
   display: flex;
-  width: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 10%;
 `;
 
 const Icon = styled.div`
@@ -17,13 +20,16 @@ const InfoBox = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 `;
 const Title = styled.div`
   box-sizing: border-box;
   margin-bottom: 5px;
+  white-space: nowrap;
 `;
 const Content = styled.div`
   box-sizing: border-box;
+  white-space: nowrap;
 `;
 function AboutMeinfo(props) {
   return (

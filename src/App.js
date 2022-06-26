@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FrontEndString from "./components/FrontEndString";
 import FullName from "./components/FullName";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +27,7 @@ function App() {
         <FrontEndString />
       </TextWrapper>
       <AboutMe />
+      <Skills />
     </>
   );
 }

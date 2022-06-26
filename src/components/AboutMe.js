@@ -11,11 +11,11 @@ const WhiteBox = styled.div`
 `;
 const AboutBox = styled.div`
   box-sizing: border-box;
-  padding: 4rem 10rem;
+  padding: 5rem 25rem;
   margin: 0;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 const AboutTitle = styled.div`
   text-align: center;
