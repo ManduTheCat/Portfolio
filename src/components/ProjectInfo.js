@@ -45,7 +45,9 @@ const MarkdownWrapper = styled.div``;
 function ProjectInfo(props) {
   let article = "# 다음 프로젝트 자리";
   let secArticle = "## 다음 프로젝트 자리";
+  let href = "#";
   if (props.content) {
+    href = props.content.href;
     article = props.content.article;
     secArticle = props.content.secArticle;
   }
@@ -54,7 +56,7 @@ function ProjectInfo(props) {
       <ProjectInfoWrapper>
         <FlexBox>
           <ImgWrapper>
-            <a href="https://github.com/Elice-Team-20/Collectors">
+            <a href={href} target="_blank" rel="noopener noreferrer">
               <Imgbox art="projecImg" src={props.img} />
             </a>
           </ImgWrapper>

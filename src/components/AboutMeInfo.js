@@ -32,13 +32,21 @@ const Content = styled.div`
   white-space: nowrap;
 `;
 function AboutMeinfo(props) {
+  let title = <Title>{props.title}</Title>;
+  if (props.title === "gitHub") {
+    title = (
+      <a href="https://github.com/ManduTheCat?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <Title>{props.title}</Title>
+      </a>
+    );
+  }
   return (
     <InfoWrapper>
       <Icon>
         <FontAwesomeIcon icon={props.icon} size="2x" />
       </Icon>
       <InfoBox>
-        <Title>{props.title}</Title>
+        {title}
         <Content>{props.content}</Content>
       </InfoBox>
     </InfoWrapper>
