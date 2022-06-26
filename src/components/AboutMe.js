@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components/macro";
 import AboutMeinfo from "./AboutMeInfo";
 import { faUser, faLocationDot, faEnvelope, faBook } from "@fortawesome/free-solid-svg-icons";
+
 const WhiteBox = styled.div`
   background-color: white;
   box-sizing: border-box;
   width: 100%;
-  margin-top: 50px;
 `;
+
 const AboutBox = styled.div`
   box-sizing: border-box;
   padding: 5rem 25rem;
@@ -20,18 +21,20 @@ const AboutTitle = styled.div`
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
-  padding: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 40px;
 `;
 
 const SubTitle = styled(AboutTitle)`
-  font-size: 35px;
+  font-size: 15px;
 `;
 
 function AboutMe() {
   return (
     <WhiteBox>
-      <AboutTitle>개발의 즐거움을 아는 개발자 김명진입니다</AboutTitle>
-      <SubTitle>저는 개발을 하면 부딛치는 어려움을 즐기며 성장하는 개발자 입니다</SubTitle>
+      <AboutTitle>About me</AboutTitle>
+      <SubTitle>저는 마주치는 어려움을 즐기는 개발자 입니다</SubTitle>
       <AboutBox>
         <AboutMeinfo title={"이름"} content={"김명진"} icon={faUser} />
         <AboutMeinfo title={"자격증"} content={"ADsP, 정보처리기사"} icon={faLocationDot} />

@@ -18,6 +18,7 @@ const Title = styled.div`
   text-align: center;
   font-size: 40px;
 `;
+
 const FlexContent = styled.div`
   display: flex;
   justify-content: center;

@@ -11,14 +11,9 @@ import Projects from "./components/Projects";
 gsap.registerPlugin(ScrollTrigger);
 
 const TextWrapper = styled.div`
-  margin-top: 0.5vh;
+  margin: 10vh 0;
 `;
 
-// const Align = styled.div`
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-// `;
 function App() {
   return (
     <>
