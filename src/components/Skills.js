@@ -29,7 +29,6 @@ const SkillsBox = styled.div`
   max-width: 90%;
   display: flex;
   justify-content: space-around;
-  border: 1px solid;
   box-sizing: border-box;
   height: 25rem;
 `;
@@ -38,7 +37,6 @@ const SkillsBoxStack = styled.div`
   background-color: white;
   box-sizing: border-box;
   width: 32%;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
