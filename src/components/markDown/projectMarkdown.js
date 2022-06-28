@@ -18,9 +18,9 @@ export const collectorArticle = {
 };
 
 export const portPoliProject = {
-  title: `# MJK portPolio`,
+  title: `# MJK Portfolio`,
   article: `
-  ## MJK PortPolio
+  ## MJK Portfolio
   * React 로 구현한 프로젝입니다.
   * gsap 라이브러리를 활용한 애니메이션을 구현 하여 복잡한 애니메니션을 단순화 시켰습니다.
 
